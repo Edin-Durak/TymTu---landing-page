@@ -194,10 +194,22 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 62.5px;
-    background-color: #69bd41;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .feature-number.green {
+    background-color: #69bd41;
+  }
+
+  .feature-number.orange {
+    background-color: #eeab52;
+  }
+
+  .feature-number.light-blue {
+    background-color: #8dd6ef;
   }
 
   .feature-number.mobile {
