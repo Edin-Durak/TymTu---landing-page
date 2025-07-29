@@ -13,6 +13,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   font-family: "General Sans", sans-serif;
   font-size: 18px;
@@ -49,6 +53,14 @@ h3 {
   letter-spacing: 0;
   text-align: center;
 
+  color: inherit;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0;
   color: inherit;
 }
 
@@ -166,6 +178,7 @@ p {
     }
   }
 }
+/* Features section */
 
 .features {
   padding: 35px 16px;
@@ -223,6 +236,73 @@ p {
   }
 }
 
+/* Test section */
+
+.test-section {
+  padding: 60px 15px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+
+  h2 {
+    text-align: left;
+  }
+  .test-description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .test-card {
+    margin-top: 1rem;
+    background: linear-gradient(180deg, #fae9bd 0%, #fdfcf4 100%);
+    box-shadow: 0px 2px 19px 0px #00091d1f;
+    padding: 25px 20px 20px;
+    border-radius: 20px;
+
+    h3 {
+      border-bottom: 1px solid rgba(0, 9, 29, 0.21);
+      padding-bottom: 1rem;
+    }
+    h4 {
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .test-includes {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0;
+      vertical-align: bottom;
+    }
+  }
+
+  .cta-button {
+    display: block;
+    padding: 23px 42px;
+    border-radius: 100px;
+    background-color: #ffbec6;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+    color: inherit;
+    max-width: 300px;
+  }
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
@@ -265,6 +345,14 @@ p {
     font-size: 40px;
   }
 
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
   p {
     font-size: 22px;
   }
@@ -305,6 +393,63 @@ p {
 
     .feature {
       margin-top: 2.5rem;
+    }
+  }
+
+  .test-section {
+    padding: 70px 100px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .test-description {
+      text-align: center;
+    }
+
+    .test-content {
+      display: flex;
+      align-items: stretch;
+      gap: 2rem;
+
+      .test-image {
+        flex: 0 0 50%;
+      }
+    }
+
+    .test-card {
+      margin-top: 0;
+      padding: 35px 24px 25px;
+    }
+
+    .cta-button {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .test-section {
+    padding: 70px 100px;
+
+    .test-content {
+      display: flex;
+      align-items: stretch;
+      gap: 2rem;
+
+      .test-image {
+        flex: 0 0 65%;
+      }
+    }
+
+    .test-card {
+      margin-top: 0;
+      padding: 35px 24px 25px;
+    }
+
+    .cta-button {
+      font-size: 20px;
+      max-width: 100%;
     }
   }
 }
