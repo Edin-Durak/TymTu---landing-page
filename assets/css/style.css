@@ -12,3 +12,29 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  font-family: "General Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: #00091d;
+
+  background: linear-gradient(162.79deg, #fbefce 7.78%, #d1f3fd 65.08%);
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0%;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
