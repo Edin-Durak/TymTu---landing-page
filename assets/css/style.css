@@ -37,7 +37,6 @@ h2 {
   font-size: 24px;
   font-weight: 500;
   line-height: 120%;
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 0;
   color: inherit;
@@ -79,6 +78,10 @@ p {
   letter-spacing: 0;
   text-transform: uppercase;
 
+  p {
+    font-size: 12px;
+  }
+
   .coupon-content {
     display: flex;
     flex-direction: column;
@@ -104,6 +107,10 @@ p {
     border: 1px dashed #00091d;
     border-radius: 64px;
     margin-left: 0.5rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
   }
 }
 
@@ -156,6 +163,136 @@ p {
 
     strong {
       font-weight: 500;
+    }
+  }
+}
+
+.features {
+  padding: 35px 16px;
+
+  .feature-image {
+    position: relative;
+  }
+  .feature {
+    position: relative;
+    text-align: left;
+    margin-top: 1rem;
+
+    h2 {
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .feature-number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32.5px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 62.5px;
+    background-color: #69bd41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-number.mobile {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+  }
+
+  .feature-number.desktop {
+    display: none;
+  }
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .coupon-banner {
+    padding: 24px;
+    font-size: 14px;
+
+    p {
+      font-size: 14px;
+    }
+
+    .coupon-content {
+      flex-direction: row;
+    }
+
+    .coupon-code {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .hero {
+    .stars-mobile {
+      display: none;
+    }
+
+    .stars-desktop {
+      display: block;
+    }
+
+    .rating {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .features {
+    .features-content {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .feature-image {
+      flex: 0 0 45%;
+    }
+
+    .feature-number.desktop {
+      display: flex;
+    }
+
+    .feature-number.mobile {
+      display: none;
+    }
+
+    .feature {
+      margin-top: 2.5rem;
     }
   }
 }
