@@ -402,6 +402,8 @@ p {
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 2;
 
     &:disabled {
       opacity: 0.5;
@@ -413,9 +415,17 @@ p {
     }
 
     img {
-      width: 48px;
-      height: 48px;
+      width: 28px;
+      height: 28px;
     }
+  }
+
+  .carousel-prev {
+    left: 0;
+  }
+
+  .carousel-next {
+    right: 0;
   }
 }
 
@@ -448,6 +458,15 @@ p {
 
     .coupon-code {
       padding-bottom: 0;
+    }
+  }
+
+  .testimonials {
+    .carousel-button {
+      img {
+        width: 34px;
+        height: 34px;
+      }
     }
   }
 }
@@ -557,8 +576,8 @@ p {
     }
 
     .carousel-button img {
-      width: 56px;
-      height: 56px;
+      width: 48px;
+      height: 48px;
     }
   }
 }
